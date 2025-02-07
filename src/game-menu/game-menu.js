@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     document.addEventListener("click", () => {
         if (!gameSound) {
-            gameSound = new Audio("/audio/game-select.mp3");
-            hoverSound = new Audio("/audio/card-select.mp3");
-            exitSound = new Audio("/audio/exit.mp3");
+            gameSound = new Audio("/personal-ps2-portfolio/audio/game-select.mp3");
+            hoverSound = new Audio("/personal-ps2-portfolio/audio/card-select.mp3");
+            exitSound = new Audio("/personal-ps2-portfolio/audio/exit.mp3");
             console.log("🔊 Audio preloaded after user interaction.");
         }
     }, { once: true });

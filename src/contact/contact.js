@@ -2,7 +2,6 @@ import "./contact.css";
 import emailjs from "emailjs-com";
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("EmailJS Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
@@ -10,8 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("click", () => {
         if (!exitSound) {
-            exitSound = new Audio("../memory-card-menu/audio/exit.mp3");
-            console.log("🔊 Exit sound preloaded after user interaction.");
+            exitSound = new Audio("/personal-ps2-portfolio/audio/exit.mp3");
         }
     }, { once: true });
 

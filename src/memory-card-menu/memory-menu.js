@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.addEventListener("click", () => {
         if (!hoverSound) {
-            hoverSound = new Audio("./audio/card-select.mp3");
-            exitSound = new Audio("./audio/exit.mp3");
+            hoverSound = new Audio("/personal-ps2-portfolio/audio/card-select.mp3");
+            exitSound = new Audio("/personal-ps2-portfolio/audio/exit.mp3");
         }
     }, { once: true });
 
