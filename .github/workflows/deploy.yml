@@ -34,6 +34,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GH_TOKEN }} # Use the Personal Access Token (PAT)
+          repository-name: irfanarathore/personal-ps2-portfolio
           branch: gh-pages
           folder: dist  # This should match where Vite outputs the build
 
