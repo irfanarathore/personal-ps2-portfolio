@@ -2,19 +2,20 @@ import { defineConfig, loadEnv } from "vite";
 import path from "path";
 
 export default defineConfig(({ mode }) => {
-  // Load environment variables from .env.local
   const env = loadEnv(mode, process.cwd(), "");
 
   return {
-    root: "src", // Vite looks inside the src/ folder for index.html
-    base: "/personal-ps2-portfolio/", // GitHub Pages expects this base path
+    root: "src",
+    base: "/personal-ps2-portfolio/", // GitHub Pages base path
+    publicDir: path.resolve(__dirname, "public"), // Ensures public assets are copied
     build: {
-      outDir: "../dist", // Moves dist to the project root, NOT inside src/
+      outDir: path.resolve(__dirname, "dist"), // Ensures dist is at project root
       rollupOptions: {
         input: {
           main: path.resolve(__dirname, "src/index.html"),
           memoryMenu: path.resolve(__dirname, "src/memory-card-menu/memory-menu.html"),
           gameMenu: path.resolve(__dirname, "src/game-menu/game-menu.html"),
+          contact: path.resolve(__dirname, "src/contact/contact.html"),
         },
       },
     },

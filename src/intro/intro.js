@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         beginButton.style.display = "none";
 
-        const audio = document.getElementById("ps2-audio");
+        const audio = document.getElementById("/audio/ps2-audio.mp3");
         if (audio && audio.paused) {  
             audio.play().catch(error => console.error("Error playing audio:", error));
         }
