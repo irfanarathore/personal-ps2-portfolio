@@ -35,3 +35,11 @@ jobs:
         with:
           branch: gh-pages
           folder: dist  # This should match where Vite outputs the build
+
+      - name: Install Vite
+        run: npm install -g vite
+        
+      
+      - name: Install SASS Dependencies
+        run: npm install -D sass sass-embedded
+        
