@@ -14,5 +14,8 @@
   "description": "",
   "dependencies": {
     "emailjs-com": "^3.2.0"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
   }
 }
