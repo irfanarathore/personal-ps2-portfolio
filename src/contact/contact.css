@@ -1,0 +1,321 @@
+body {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    background: #000511;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Image Grid */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* More space between images */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 350px;  /* Adjusted for medium size */
+    height: auto;   /* Keeps aspect ratio */
+    object-fit: cover; /* Crops without distortion */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 250px; /* Slightly smaller for mobile */
+    }
+}
+/* Contact Form Box */
+.info-box {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgb(35, 17, 247);
+    margin-top: 40px;
+    margin-bottom: 100px; /* Ensures space from About Me */
+}
+/* Contact Form */
+/* Adjust the contact form layout */
+/* Center align contact form */
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Fix input and textarea sizing */
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-bottom: 15px;
+}
+/* Increase textarea height */
+.contact-form textarea {
+    min-height: 120px; /* Allows more text */
+    resize: vertical; /* Allows manual resizing */
+}
+
+/* Improve input spacing */
+.contact-form label {
+    font-weight: bold;
+    color: #0004ff;
+    margin-bottom: 5px;
+}
+
+/* Align inputs properly */
+.contact-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Center button */
+.submit {
+    width: 100%;
+    background: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background: darkblue;
+}
+
+.contact-form button {
+    width: 50%;
+    background: blue;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-box {
+        width: 90%; /* Make it take up more space on mobile */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 100%; /* Full width */
+    }
+
+    .contact-form button {
+        width: 80%;
+    }
+}
+/* Container for the About Me and Contact Form */
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align */
+    justify-content: center; 
+    gap: 30px; /* Spacing between sections */
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 10px;
+    width: 50%; /* Takes half the screen */
+}
+
+.image-grid img {
+    width: 100%; /* Ensures images fill their containers */
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+    box-shadow: 0px 0px 8px rgb(35, 17, 247);
+
+    h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: #1f53ff;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    strong {
+        color: #1f53ff;
+    }
+}
+
+input{
+    width: 99%; /* Full width */
+    background: rgba(0, 0, 0, 0.8);; /* Dark theme background */
+    color: white; /* Text color */
+    border: 2px solid #444; /* Subtle border */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 1rem; /* Keep consistent font */
+    font-weight: bold; /* Keep consistent font */
+}
+
+
+
+textarea {
+    width: 99%; /* Full width */
+    height: 100px; /* Full height */
+    background: rgba(0, 0, 0, 0.8);; /* Dark theme background */
+    color: white; /* Text color */
+    border: 2px solid #444; /* Subtle border */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 1rem;
+    font-weight: bold; /* Keep consistent font */
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Play', sans-serif;
+    font-size: 1rem;
+    color: #ffffff; /* Subtle placeholder text */
+}
+
+input:focus, textarea:focus {
+    border-color: #9c9ca5; /* Highlight on focus */
+    outline: none;
+}
+
+
+/* Styling the profile container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.9); /* Dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px #003cff; /* Blue glowing effect */
+    margin: 40px auto;
+    border: 2px solid #1f53ff;
+}
+
+/* Image Box */
+.image-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    margin: auto; /* Centers the images */
+    margin-top: 600px; /* Ensures spacing between image and About Me */
+}
+
+.image-box img {
+    padding: 10px;
+    width: 350px;  /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(35, 17, 247);
+}
+
+/* About Me Box */
+.about-me {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    box-shadow: 0px 0px 10px #1f53ff;
+    border: 2px solid #1f53ff;
+    margin: 40px auto; /* Ensures even spacing */
+}
+
+/* Title */
+.about-me h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1f53ff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Text inside about me */
+.about-me p {
+    margin-bottom: 12px;
+}
+
+/* Strong emphasis text */
+.about-me strong {
+    color: #1f53ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .image-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box img {
+        width: 90%;
+    }
+}
+

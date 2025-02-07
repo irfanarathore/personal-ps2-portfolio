@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(to bottom right, #505050, #202020);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Memory Menu Container */
+.memory-menu {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PS2 Title (Top Left) */
+.portfolio-title {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 2.25rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Memory Card Title (Top Right) */
+.memory-card-title {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    font-size: 2.25rem;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Memory Cards Container */
+.memory-cards {
+    display: flex;
+    gap: 5vw;
+}
+
+/* Memory Card Styling */
+.memory-card {
+    width: 100px;
+    height: 120px;
+    background: black;
+    border-radius: 10px;
+    box-shadow: inset 0 -5px 10px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover Highlight */
+.memory-card:hover {
+    box-shadow: 0 0 20px white;
+}
+
+/* PS2 Buttons UI (Bottom) */
+.controls {
+    position: absolute;
+    bottom: 20px; /* ⬇️ Lower it to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Play', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+/* PS2 Button Styles */
+.ps-button {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+}
+
+.ps-button:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}

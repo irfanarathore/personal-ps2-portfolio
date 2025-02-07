@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-menu.css">
+</head>
+<body>
+
+    <!-- PS2 Game Selection Menu -->
+    <div class="game-menu">
+        <!-- Title (Top Left) -->
+        <div class="project-title">Select a Project</div>
+
+        <!-- Dynamic Text (Top Right) -->
+        <div class="dynamic-title">Hover over an icon</div>
+
+        <!-- Game Icons -->
+        <div class="game-icons">
+            <div class="game-icon" data-text="Basketball Analytics" data-link="https://github.com/irfanarathore/Nba-Statistical-Analysis">
+                <img src="icons/basketball.png" alt="Basketball Project">
+            </div>
+            <div class="game-icon" data-text="TikTok Data Scraper" data-link="https://tiktok-order-exporter-ui.vercel.app/">
+                <img src="icons/tiktok.png" alt="TikTok Project">
+            </div>
+            <div class="game-icon" data-text="Home Automation" data-link="https://github.com/irfanarathore/probate-property-automation">
+                <img src="icons/house.png" alt="Home Automation Project">
+            </div>
+            <div class="game-icon" data-text="Car Performance Tracker" data-link="https://github.com/irfanarathore/Car-Rental-Analysis">
+                <img src="icons/car.png" alt="Car Performance Project">
+            </div>
+        </div>
+
+        <!-- PS2 Buttons UI (Bottom) -->
+        <div class="controls">
+            <img src="buttons/ps2-x.png" alt="X Button" class="ps-button">
+            <span>Click/Press the 'Enter' key on the memory cards</span>
+        
+            <img src="buttons/ps2-o.png" alt="O Button" class="ps-button">
+            <span>Click/Press the 'Escape' button to leave</span>
+        </div>
+        
+    <script type="module" src="game-menu.js"></script>
+
+</body>
+</html>
