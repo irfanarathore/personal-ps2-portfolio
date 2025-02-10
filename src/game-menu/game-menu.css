@@ -23,8 +23,8 @@ body {
 /* Select a Project (Top Left) */
 .project-title {
     position: absolute;
-    top: 2%;
-    left: 2%;
+    top: 1%;
+    left: 1%;
     font-size: 2.25rem;
     text-shadow: 2px 2px 5px black;
 }
@@ -32,9 +32,9 @@ body {
 /* Dynamic Text (Top Right) */
 .dynamic-title {
     position: absolute;
-    top: 2%;
-    right: 5%;
-    font-size: 2.25rem;
+    top: 4%;
+    right: 1%;
+    font-size: 2.6rem;
     color: yellow;
     text-shadow: 2px 2px 5px black;
 }
@@ -98,4 +98,27 @@ body {
 
 .ps-button:hover {
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+}
+
+#project-btn {
+    font-size: 3rem;
+    font-family: 'Play', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(4, 0, 245, 0.527);
+    cursor: pointer;
+    border: 3px solid black;  /* Add a black border */
+    background: black; /* Add a black background */
+    padding: 10px 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+#project-btn:hover {
+    text-shadow: 0px 0px 15px rgb(8, 11, 196);
+    box-shadow: 0 0 15px rgba(1, 35, 230, 0.979);
+    transform: scale(1.1);
+}
+
+#project-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }

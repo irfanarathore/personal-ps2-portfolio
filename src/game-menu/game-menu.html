@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Menu</title>
@@ -12,10 +18,10 @@
     <!-- PS2 Game Selection Menu -->
     <div class="game-menu">
         <!-- Title (Top Left) -->
-        <div class="project-title">Select a Project</div>
+        <button id="project-btn" class="project-title">Select a Project</button>
 
         <!-- Dynamic Text (Top Right) -->
-        <div class="dynamic-title">Hover over an icon</div>
+        <div class="dynamic-title">Hover over and Click an icon</div>
 
         <!-- Game Icons -->
         <div class="game-icons">
@@ -36,10 +42,10 @@
         <!-- PS2 Buttons UI (Bottom) -->
         <div class="controls">
             <img src="buttons/ps2-x.png" alt="X Button" class="ps-button">
-            <span>Click/Press the 'Enter' key on the memory cards</span>
+            <span>Press the 'Enter' key on the memory cards</span>
         
             <img src="buttons/ps2-o.png" alt="O Button" class="ps-button">
-            <span>Click/Press the 'Escape' button to leave</span>
+            <span>Press the 'Escape' key to leave</span>
         </div>
         
     <script type="module" src="game-menu.js"></script>

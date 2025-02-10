@@ -2,54 +2,59 @@ import "./intro.scss"; // Relative path
 
 // Generate the Cubes
 document.addEventListener("DOMContentLoaded", () => {
-    const beginButton = document.getElementById("begin-btn")
-    const innerDiv = document.querySelector(".inner");
+  const beginButton = document.getElementById("begin-btn");
+  const innerDiv = document.querySelector(".inner");
 
-    if(!innerDiv || !beginButton){
-        console.error("Required elements are missing");
-        return;
-    }
+  if (!innerDiv || !beginButton) {
+    console.error("Required elements are missing");
+    return;
+  }
 
-    for (let i = 0; i < 112; i++) {
-        let boxContainer = document.createElement('div');
-        boxContainer.className = 'box-container';
-        let box = document.createElement('div');
-        box.className = 'box';
-        
-        // Create cube faces (ensuring 3D effect)
-        ["top", "bottom", "left", "right"].forEach(face => {
-            let faceDiv = document.createElement('div');
-            faceDiv.className = face;
-            box.appendChild(faceDiv);
-        });
+  for (let i = 0; i < 112; i++) {
+    let boxContainer = document.createElement("div");
+    boxContainer.className = "box-container";
+    let box = document.createElement("div");
+    box.className = "box";
 
-        boxContainer.appendChild(box);
-        innerDiv.appendChild(boxContainer);
-    }
+    // Create cube faces (ensuring 3D effect)
+    ["top", "bottom", "left", "right"].forEach((face) => {
+      let faceDiv = document.createElement("div");
+      faceDiv.className = face;
+      box.appendChild(faceDiv);
+    });
 
-    const particlesContainer = document.querySelector(".particles");
+    boxContainer.appendChild(box);
+    innerDiv.appendChild(boxContainer);
+  }
 
-    for (let i = 1; i <= 5; i++) {
-        let particle = document.createElement("span");
-        particle.className = `particle-${i}`;
-        particlesContainer.appendChild(particle);
-    }
+  const particlesContainer = document.querySelector(".particles");
 
-    // Ensure PS2 Audio Plays on First Click
-    document.addEventListener("click", () => {
+  for (let i = 1; i <= 5; i++) {
+    let particle = document.createElement("span");
+    particle.className = `particle-${i}`;
+    particlesContainer.appendChild(particle);
+  }
 
-        innerDiv.style.animation = "enter 16s cubic-bezier(1,0,.4,1) forwards";
-    
-        beginButton.style.display = "none";
+  // Ensure PS2 Audio Plays on First Click
+  document.addEventListener(
+    "click",
+    () => {
+      innerDiv.style.animation = "enter 16s cubic-bezier(1,0,.4,1) forwards";
+      beginButton.style.display = "none";
 
-        const audio = new Audio("/personal-ps2-portfolio/audio/ps2-audio.mp3");
-        if (audio && audio.paused) {  
-            audio.play().catch(error => console.error("Error playing audio:", error));
-        }
-    }, { once: true });
+      const audio = new Audio("/personal-ps2-portfolio/audio/ps2-audio.mp3");
+      if (audio && audio.paused) {
+        audio.play().catch((error) =>
+          console.error("Error playing audio:", error)
+        );
+      }
+    },
+    { once: true }
+  );
 
-    // Redirect to Memory Card Menu after animation
-    setTimeout(() => {
-        window.location.href = "memory-card-menu/memory-menu.html";
-    }, 16000);
+  // Redirect to Memory Card Menu after animation using an absolute path
+  setTimeout(() => {
+    window.location.href =
+      "/personal-ps2-portfolio/memory-card-menu/memory-menu.html";
+  }, 16000);
 });

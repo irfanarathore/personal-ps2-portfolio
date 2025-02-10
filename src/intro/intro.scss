@@ -59,13 +59,16 @@ body {
     width: 100%;
     padding-top: 75%;
     position: relative;
-    max-height: 100vh;
+    max-height: 150vh;
     transform-style: preserve-3d;
-    perspective: 400px;
+    perspective: 1000px;
     overflow: hidden;
 }
 
 .inner {
+
+    transform-origin: center center;
+
     .inner-bg {
         background-image: url(https://res.cloudinary.com/dhpaysqxb/image/upload/v1568580561/nebula_prju57.png);
         background-size: cover;
@@ -366,4 +369,19 @@ body {
 
 .is-small {
     font-size: .3em;
+}
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
 }

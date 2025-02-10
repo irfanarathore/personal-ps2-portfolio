@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS2 Portfolio Intro</title>
+    
+    <link rel="icon" href="/personal-ps2-portfolio/assets/favicon-D4M2Y4XO.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/personal-ps2-portfolio/assets/favicon-32x32-pMVBzL_p.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/personal-ps2-portfolio/assets/favicon-16x16-BiWXpbIb.png">
+    <link rel="manifest" href="/personal-ps2-portfolio/assets/site-DoI7J1-1.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/personal-ps2-portfolio/assets/intro-2EXkwwV0.js"></script>
+  <link rel="modulepreload" crossorigin href="/personal-ps2-portfolio/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/personal-ps2-portfolio/assets/intro-ucdLnK6A.css">
+</head>
+<body>
+    <!-- PS2 Floating Cubes -->
+    <div class="screen">
+      <div class="content">
+        <p class="branding">WELCOME TO IRFAN'S PORTFOLIO</p>
+        <p class="inspiration">Inspired by Sony Computer Entertainment's PlayStation 2</p>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.getElementById("preloader").style.display = "none";
+                document.getElementById("content").style.display = "block";
+            }, 500); // Small delay to ensure full load
+        });
+    </script>
+
+      <div class="inner">
+        <div class="inner-bg"></div>
+        <div class="particles">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Begin Button -->
+      <button id="begin-btn" class="ps2-button">Click To Animate</button>
+    </div>
+
+    <!-- Audio -->
+    <audio id="ps2-audio" loop>
+      <source src="PS2.mp3" type="audio/mp3">  <!-- Ensure it's inside 'public/' -->
+    </audio>
+
+    <!-- Load JavaScript -->
+</body>
+</html>

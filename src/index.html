@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PS2 Portfolio Intro</title>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- PS2 Floating Cubes -->
-    <div class="screen">
-      <div class="content">
-        <p class="branding">WELCOME TO IRFAN'S PORTFOLIO</p>
-        <p class="inspiration">Inspired by Sony Computer Entertainment's PlayStation 2</p>
-      </div>
-
-      <div class="inner">
-        <div class="inner-bg"></div>
-        <div class="particles">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
-      <!-- Begin Button -->
-      <button id="begin-btn" class="ps2-button">Click To Animate</button>
-    </div>
-
-    <!-- Audio -->
-    <audio id="ps2-audio" loop>
-      <source src="PS2.mp3" type="audio/mp3">  <!-- Ensure it's inside 'public/' -->
-    </audio>
-
-    <!-- Load JavaScript -->
-    <script type="module" src="intro/intro.js"></script>
-</body>
+    <title>PS2 Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div> <!-- React will render here -->
+    <script type="module" src="main.jsx"></script>
+  </body>
 </html>
+  

@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             setTimeout(() => {
                 console.log("Returning to memory menu...");
-                window.location.href = "../memory-card-menu/memory-menu.html";
+                window.location.href = "/personal-ps2-portfolio/memory-card-menu/memory-menu.html";
             }, 700);
         }
     });
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         setTimeout(() => {
             console.log("Returning to previous page...");
-            window.location.href = "../memory-card-menu/memory-menu.html";
+            window.location.href = "/personal-ps2-portfolio/memory-card-menu/memory-menu.html";
         }, 700);
     }
 

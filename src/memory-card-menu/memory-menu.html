@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card Menu</title>
@@ -12,10 +17,10 @@
     <!-- PS2 Memory Card Menu -->
     <div class="memory-menu">
         <!-- PS2 Title (Top Left) -->
-        <div class="portfolio-title">Portfolio</div>
+        <button id="portfolio-btn" class="portfolio-title">Portfolio</button>
 
         <!-- Memory Card Title (Top Right) -->
-        <div class="memory-card-title">Hover over a Memory Card</div>
+        <div class="memory-card-title">Hover over and click a Memory Card</div>
 
         <!-- Memory Cards -->
         <div class="memory-cards">
@@ -27,13 +32,20 @@
         <!-- PS2 Buttons UI (Bottom) -->
         <div class="controls">
             <img src="buttons/ps2-x.png" alt="X Button" class="ps-button">
-            <span>Click/Press the 'Enter' key on the memory cards</span>
+            <span>Press the 'Enter' key on the memory cards</span>
         
             <img src="buttons/ps2-o.png" alt="O Button" class="ps-button">
-            <span>Click/Press the 'Escape' button to leave</span>
+            <span>Press the 'Escape' key to leave</span>
         </div>
         
         <script src="./memory-menu.js" type="module"></script>
+
+        <!-- In your HTML -->
+        <audio id="background-audio" autoplay muted playsinline>
+            <source src="/personal-ps2-portfolio/audio/ps2-audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <!-- End of PS2 Memory Card Menu -->  
 
 </body>
 </html>
