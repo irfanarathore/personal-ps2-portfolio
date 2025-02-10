@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="/personal-ps2-portfolio/assets/favicon-D4M2Y4XO.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/personal-ps2-portfolio/assets/favicon-32x32-pMVBzL_p.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/personal-ps2-portfolio/assets/favicon-16x16-BiWXpbIb.png">
+    <link rel="manifest" href="/personal-ps2-portfolio/assets/site-DoI7J1-1.webmanifest">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card Menu</title>
     <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/personal-ps2-portfolio/assets/memoryMenu-DX_Zdvya.js"></script>
+  <script type="module" crossorigin src="/personal-ps2-portfolio/assets/memoryMenu-CI0MUAPS.js"></script>
   <link rel="modulepreload" crossorigin href="/personal-ps2-portfolio/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="/personal-ps2-portfolio/assets/memoryMenu-DYr7FgKj.css">
+  <link rel="stylesheet" crossorigin href="/personal-ps2-portfolio/assets/memoryMenu-azCZlEz6.css">
 </head>
 <body>
 
     <!-- PS2 Memory Card Menu -->
     <div class="memory-menu">
         <!-- PS2 Title (Top Left) -->
-        <div class="portfolio-title">Portfolio</div>
+        <button id="portfolio-btn" class="portfolio-title">Portfolio</button>
 
         <!-- Memory Card Title (Top Right) -->
-        <div class="memory-card-title">Hover over a Memory Card</div>
+        <div class="memory-card-title">Hover over and click a Memory Card</div>
 
         <!-- Memory Cards -->
         <div class="memory-cards">
@@ -29,12 +34,19 @@
         <!-- PS2 Buttons UI (Bottom) -->
         <div class="controls">
             <img src="/personal-ps2-portfolio/assets/ps2-x-Dm2RQsh0.png" alt="X Button" class="ps-button">
-            <span>Click/Press the 'Enter' key on the memory cards</span>
+            <span>Press the 'Enter' key on the memory cards</span>
         
             <img src="/personal-ps2-portfolio/assets/ps2-o-BMEs11Qf.png" alt="O Button" class="ps-button">
-            <span>Click/Press the 'Escape' button to leave</span>
+            <span>Press the 'Escape' key to leave</span>
         </div>
         
+
+        <!-- In your HTML -->
+        <audio id="background-audio" autoplay muted playsinline>
+            <source src="/personal-ps2-portfolio/audio/ps2-audio.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <!-- End of PS2 Memory Card Menu -->  
 
 </body>
 </html>
